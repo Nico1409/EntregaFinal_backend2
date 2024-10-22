@@ -12,10 +12,3 @@ export const invokePassport = strategy =>{
         })(req, res, next);
     }
 }
-
-
-// const suma = (num1, num2) => {
-//     return (multiplo) => num1 + num2 * multiplo
-// }
-
-// suma(1,2)(5) // 15 
