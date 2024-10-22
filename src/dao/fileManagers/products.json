@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "Blu-ray Star Wars",
+    "description": "Edición especial 2025",
+    "price": "150",
+    "status": true,
+    "stock": "50",
+    "code": "SWX2025",
+    "category": "movies"
+  },
+  {
+    "id": "2",
+    "title": "Vinilo Pink Floyd",
+    "description": "The Dark Side of the Moon - Edición Remasterizada",
+    "price": "180",
+    "status": true,
+    "stock": "35",
+    "code": "PF1973",
+    "category": "music"
+  },
+  {
+    "id": "3",
+    "title": "DVD Harry Potter",
+    "description": "Saga completa - Colección 2023",
+    "price": "200",
+    "status": true,
+    "stock": "40",
+    "code": "HPX2023",
+    "category": "movies"
+  }
+]

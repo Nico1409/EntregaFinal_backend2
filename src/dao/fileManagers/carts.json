@@ -1,0 +1,47 @@
+{
+  "carts": [
+    {
+      "id": "1",
+      "products": [
+        {
+          "product": "10",
+          "quantity": 3
+        },
+        {
+          "product": "15",
+          "quantity": 2
+        },
+        {
+          "product": "8",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "products": [
+        {
+          "product": "9",
+          "quantity": 4
+        },
+        {
+          "product": "12",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "products": [
+        {
+          "product": "7",
+          "quantity": 1
+        },
+        {
+          "product": "14",
+          "quantity": 6
+        }
+      ]
+    }
+  ]
+}

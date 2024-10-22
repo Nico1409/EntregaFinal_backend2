@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Product List</h1>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Stock</th>
+                <th>Category</th>
+                <th>Product ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+            <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.code}}</td>
+                <td>{{this.price}}</td>
+                <td>{{this.status}}</td>
+                <td>{{this.stock}}</td>
+                <td>{{this.category}}</td>
+                <td>{{this._id}}</td>
+                <td><button class="add-to-cart" data-product-id="{{this._id}}">Add to Cart</button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <div class="pagination"></div>
+
+    <label for="limitSelector">Limit:</label>
+    <select id="limitSelector">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+    </select>
+
+    <button id="show-cart-products">Show Cart Products</button>
+
+    <div id="cart-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cart Products</h2>
+            <ul id="cart-products-list"></ul>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
